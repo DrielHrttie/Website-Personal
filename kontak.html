@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak - Kopiin</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="kontak.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Kopiin</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tentang.html">Tentang Kami</a></li>
+          <li><a href="menu.html">Menu Kopi</a></li>
+          <li><a href="kontak.html" class="active">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="menu-section">
+    <h2>Hubungi Kami</h2>
+    <p>Jika kamu memiliki pertanyaan, kritik, atau saran, jangan ragu untuk menghubungi kami melalui formulir di bawah
+      ini atau datang langsung ke kedai kami.</p>
+
+    <div style="margin-top: 2em;">
+      <form action="#" method="post" id="kontakForm" style="display: flex; flex-direction: column; gap: 1em; max-width: 500px;">
+        <label>Nama:<br>
+          <input type="text" name="nama" required style="width: 100%; padding: 0.5em;">
+        </label>
+        <label>Email:<br>
+          <input type="email" name="email" required style="width: 100%; padding: 0.5em;">
+        </label>
+        <label>Pesan:<br>
+          <textarea name="pesan" rows="5" required style="width: 100%; padding: 0.5em;"></textarea>
+        </label>
+        <button type="submit"   
+          style="padding: 0.5em 1em; background-color: #4B2E2E; color: white; border: none; border-radius: 6px; cursor: pointer;">Kirim</button>
+      </form>
+
+      <div style="margin-top: 2em;">
+        <h3>Alamat Kedai:</h3>
+        <p>Kopiin Coffee Shop<br>
+          Jl. Kopi Damai No. 45<br>
+          Jakarta Selatan, DKI Jakarta<br>
+          Indonesia</p>
+
+        <h3>Kontak:</h3>
+        <p>Telepon: 0812-3456-7890<br>
+          Email: info@kopiin.id<br>
+          Instagram: <a href="https://instagram.com/kopiin.id" target="_blank">@kopiin.id</a></p>
+
+        <h3>Lokasi di Google Maps:</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19826.00864089414!2d106.80973328925989!3d-6.265982951538812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1f7c4fa6a05%3A0x5e7bb02e6d61daba!2sJakarta%20Selatan!5e0!3m2!1sid!2sid!4v1719370000000"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Kopiin. Semua hak dilindungi.</p>
+  </footer>
+
+  <script>
+  document.getElementById('kontakForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Mencegah reload halaman
+    alert('Terima kasih telah mengirim pesan.. kami akan segera merespon..');
+    this.reset(); // Reset form jika diinginkan
+  });
+</script>
+
+</body>
+
+</html>
